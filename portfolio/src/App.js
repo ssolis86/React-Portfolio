@@ -4,10 +4,20 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import {  BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
+import { makeStyles } from '@material-ui/core/styles';
 
-// import './App.css';
 
+const useStyles = makeStyles((theme) => ({
+  page: 
+  {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh'
+  }
+}))
 function App() {
+  const classes = useStyles();
   return (
    <div>
      
@@ -15,16 +25,22 @@ function App() {
         <div>
           <Switch>
             <Route path="/contact">
-              <Header />
-              <Contact />
+              <div className={classes.page}>
+                <Header />
+                <Contact />
+              </div>
+              
             </Route>
             <Route path="/portfolio">
               <Header />
               <Portfolio />
             </Route>
             <Route path="/">
+            <div className={classes.page}>
               <Header />
               <Home />
+              <Footer />
+            </div>
             </Route>
           </Switch>
         </div>

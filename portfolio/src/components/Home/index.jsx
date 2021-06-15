@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',
-    padding: theme.spacing(0, 3),
+    padding: theme.spacing(0, 3)
   },
   paper: {
     maxWidth: 400,
@@ -18,7 +18,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const message = `Intro Message goes here: lksjhdflkjshdgflkjsdfkljsdf`;
+const message =  `I am a full stack developer based in San Antonio, TX. 
+                  I love programming, traveling, golfing and playing guitar. 
+                  I am currently completing a Full Stack Developer Bootcamp through University of Texas at Austin. 
+                  Check out my Portfolio to see some of the work I've done!`;
 
 export default function Home() {
   const classes = useStyles();
@@ -28,7 +31,7 @@ export default function Home() {
       <Paper className={classes.paper}>
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item>
-            <Avatar>W</Avatar>
+            <Avatar alt="Remy Sharp" src="src/assets/me.png">S</Avatar>
           </Grid>
           <Grid item xs>
             <Typography>{message}</Typography>
