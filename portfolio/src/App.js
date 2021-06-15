@@ -13,6 +13,9 @@ function App() {
       <Router>
         <div>
           <Switch>
+            <Route path="/contact">
+              <Header />
+            </Route>
             <Route path="/portfolio">
               <Header />
               <Portfolio />
