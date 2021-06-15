@@ -1,0 +1,8 @@
+.portfolio-root {
+    display: flex;
+}
+.paper {
+    height: 140px;
+    width: fit-content;
+}
+   
