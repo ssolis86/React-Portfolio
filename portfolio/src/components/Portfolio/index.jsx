@@ -1,9 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Project from '../Project';
-import fitness_tracker_image from '../../assets/fitness_tracker.png';
+import projectOne from '../../assets/fitness_tracker.png';
+import projectTwo from '../../assets/ecommerce.png';
+import projectThree from '../../assets/weather.png'
+import projectFour from '../../assets/weather.png';
+import projectFive from '../../assets/vaccine.png';
+import projectSix from '../../assets/roadtrippers.png';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,28 +28,48 @@ export default function Portfolio() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs>
+            <Project 
+            title={'Fitness Tracker'} 
+            deployed={'https://still-fjord-86390.herokuapp.com/'} 
+            ghub={'https://github.com/ssolis86/Fitness-Tracker'} 
+            image={projectOne} />
+        </Grid>
+        <Grid item xs>
           <Project 
-          title={'Fitness Tracker'} 
-          deployed={'https://still-fjord-86390.herokuapp.com/'} 
-          ghub={'https://github.com/ssolis86/Fitness-Tracker'} 
-          image={fitness_tracker_image} />
+            title={'e-Commerce Back End'} 
+            deployed={'https://github.com/ssolis86/ORM-Ecommerce-Back-End'} 
+            ghub={'https://github.com/ssolis86/ORM-Ecommerce-Back-End'} 
+            image={projectTwo} />
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
-        </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Project 
+            title={'Weather Dashboard'} 
+            deployed={'https://ssolis86.github.io/weather-dashboard/'} 
+            ghub={'https://github.com/ssolis86/weather-dashboard'} 
+            image={projectThree} />
         </Grid>
       </Grid>
       <Grid container spacing={3}>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Project 
+            title={'Workday Scheduler'} 
+            deployed={'https://ssolis86.github.io/workdayscheduler/'} 
+            ghub={'https://github.com/ssolis86/workdayscheduler'} 
+            image={projectFour} />
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Project 
+            title={'Digital Vaccine Tracker'} 
+            deployed={'https://ancient-hollows-23369.herokuapp.com/'} 
+            ghub={'https://github.com/wrp90/Vaccination_Tracker'} 
+            image={projectFive} />
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Project 
+            title={'RoadTrippers'} 
+            deployed={'https://enigmatic-taiga-76938.herokuapp.com/'} 
+            ghub={'https://github.com/KannaVairavan/Travel-App'} 
+            image={projectSix} />
         </Grid>
       </Grid>
     </div>

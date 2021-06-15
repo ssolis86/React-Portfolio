@@ -20,7 +20,7 @@ export default function Project(props) {
         <div>
         <Paper className={classes.paper}>
           <div>
-            {props.title}
+            <h3>{props.title}</h3>
           </div>
           <div>
             <a href={props.deployed}>
@@ -34,7 +34,6 @@ export default function Project(props) {
           </div>
           <div>
             <img width='275px' height='200px' alt="project screenshot" src={props.image}></img>
-            
           </div>
         </Paper>
         </div>
