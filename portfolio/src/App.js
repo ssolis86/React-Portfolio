@@ -1,23 +1,24 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import MenuIcon from '@material-ui/icons/Menu';
-import IconButton from '@material-ui/core/IconButton';
+import Header from '../src/components/Header';
+import Home from '../src/components/Home';
+import {  BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
+
 // import './App.css';
 
 function App() {
   return (
    <div>
-     <AppBar color="transparent" position="static">
-        <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <div>
-            <span>Stephen Solis</span>
-          </div>
-        </Toolbar>
-      </AppBar>
+     
+      <Router>
+      <div>
+        <Switch>
+          <Route path="/">
+            <Header />
+              <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
    </div>
   );
 }
