@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Project from '../Project';
+import fitness_tracker_image from '../../assets/fitness_tracker.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,7 +23,11 @@ export default function Portfolio() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Project 
+          title={'Fitness Tracker'} 
+          deployed={'https://still-fjord-86390.herokuapp.com/'} 
+          ghub={'https://github.com/ssolis86/Fitness-Tracker'} 
+          image={fitness_tracker_image} />
         </Grid>
         <Grid item xs>
           <Paper className={classes.paper}>xs</Paper>
