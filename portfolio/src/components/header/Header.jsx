@@ -22,7 +22,7 @@ return (
         </Toolbar>
       </AppBar>
 )
-}
+};
 
 
 
