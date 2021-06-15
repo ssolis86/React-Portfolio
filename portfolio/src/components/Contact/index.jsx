@@ -22,7 +22,6 @@ export default function Contact() {
   
     return (
         <div className={classes.root}>
-            <Header />
             <ContactForm />
         </div>
     );

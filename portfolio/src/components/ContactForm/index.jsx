@@ -9,15 +9,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     overflow: 'hidden',
     padding: theme.spacing(0, 3),
-  },
-  paper: {
-    maxWidth: 400,
-    margin: `${theme.spacing(1)}px auto`,
-    padding: theme.spacing(2),
-  },
+  }
 }));
-
-export const ContactForm = () => 
+ 
+export default function ContactForm() 
 {
     const classes = useStyles();
     return (

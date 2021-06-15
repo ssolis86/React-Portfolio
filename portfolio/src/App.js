@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
+import Contact from './components/Contact';
 import {  BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
 import Portfolio from './components/Portfolio';
 
@@ -15,6 +16,7 @@ function App() {
           <Switch>
             <Route path="/contact">
               <Header />
+              <Contact />
             </Route>
             <Route path="/portfolio">
               <Header />
