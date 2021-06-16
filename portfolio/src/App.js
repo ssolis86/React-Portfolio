@@ -28,12 +28,15 @@ function App() {
               <div className={classes.page}>
                 <Header />
                 <Contact />
+                <Footer />
               </div>
-              
             </Route>
             <Route path="/portfolio">
+            <div className={classes.page}>
               <Header />
               <Portfolio />
+              <Footer />
+              </div>
             </Route>
             <Route path="/">
             <div className={classes.page}>

@@ -21,12 +21,11 @@ export default function Footer()
     const classes = useStyles();
     return (
   <footer className={classes.footer}>
-    <IconButton>
+    <IconButton onClick={() => window.open('https://github.com/ssolis86?tab=repositories')}>
       <GitHubIcon />
     </IconButton>
-    <IconButton>
+    <IconButton onClick={() => window.open('https://www.linkedin.com/in/stephen-solis')}>
       <LinkedInIcon />
     </IconButton>
-    <p>Some footer nonsense!</p>
   </footer>
 )};
