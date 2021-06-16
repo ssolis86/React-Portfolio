@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { IconButton } from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+import DescriptionIcon from '@material-ui/icons/Description';
+import Resume from '../../assets/Stephen-Solis-Resume (1).pdf';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,6 +29,16 @@ export default function Footer()
     </IconButton>
     <IconButton onClick={() => window.open('https://www.linkedin.com/in/stephen-solis')}>
       <LinkedInIcon />
+    </IconButton>
+    <IconButton onClick={() => window.open('mailto:stephensolis@sbcglobal.net')}>
+      <EmailIcon />
+    </IconButton>
+    <IconButton>
+      
+      <a href={Resume} target="_blank" rel="noreferrer noopener" download="Stephen-Solis-Resume">
+      <DescriptionIcon />
+      </a>
+      
     </IconButton>
   </footer>
 )};
