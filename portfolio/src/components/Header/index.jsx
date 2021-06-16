@@ -17,6 +17,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import FolderIcon from '@material-ui/icons/Folder';
+import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -128,7 +130,9 @@ return (
         <List>
           {['Home', 'Portfolio', 'Contact'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <HomeIcon /> : <FolderIcon />}</ListItemIcon>
+              <ListItemIcon>
+                {(index === 0 && <Link to="/"><HomeIcon/></Link>) || (index === 1 && <Link to="/portfolio"><FolderIcon/></Link>) || (index === 2 && <Link to="/contact"><PermContactCalendarIcon/></Link>)}
+              </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}

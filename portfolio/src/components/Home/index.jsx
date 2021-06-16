@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
+import me from '../../assets/me.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
   },
+  avatar: {
+    height: '100px',
+    width: '100px',
+  }
 }));
 
 const message =  `I am a full stack developer based in San Antonio, TX. 
@@ -31,7 +36,7 @@ export default function Home() {
       <Paper className={classes.paper}>
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item>
-            <Avatar alt="Remy Sharp" src="src/assets/me.png">S</Avatar>
+            <Avatar className={classes.avatar} alt="picture of me" src={me} />
           </Grid>
           <Grid item xs>
             <Typography>{message}</Typography>
