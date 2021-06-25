@@ -5,7 +5,7 @@ import { IconButton } from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import DescriptionIcon from '@material-ui/icons/Description';
-import Resume from '../../assets/Stephen-Solis-Resume (1).pdf';
+import Resume from '../../assets/Revised_Resume.pdf';
 
 
 const useStyles = makeStyles((theme) => ({
