@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './components/Header';
-import Home from './components/Home';
+import HomeCard from './components/HomeCard';
 import Contact from './components/Contact';
 import {  BrowserRouter as Router,  Switch,  Route} from "react-router-dom";
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import { makeStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -13,10 +14,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    backgroundImage:`url(${process.env.PUBLIC_URL + './src/assets/background_image.jpg'})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
   },
+  bg:{
+    background: "linear-gradinet(45deg, 3FE6B8B 30%, #FF8E53 90%)",
+    backgroundSize: ""
+  }
 }));
 function App() {
   const classes = useStyles();
@@ -41,9 +43,9 @@ function App() {
               </div>
             </Route>
             <Route path="/">
-            <div className={classes.root}>
+            <div className={classNames(classes.root, classes.bg)}>
               <Header />
-              <Home />
+              <HomeCard />
               <Footer />
             </div>
             </Route>

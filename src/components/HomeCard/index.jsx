@@ -6,11 +6,12 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import me from '../../assets/me.png';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',
-    padding: theme.spacing(0, 3)
+    padding: theme.spacing(0, 3),
   },
   paper: {
     maxWidth: 400,
@@ -28,11 +29,12 @@ const message =  `I am a full stack developer based in San Antonio, TX.
                   I am currently completing a Full Stack Developer Bootcamp through University of Texas at Austin. 
                   Check out my Portfolio to see some of the work I've done!`;
 
-export default function Home() {
+export default function HomeCard() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
+    
       <Paper className={classes.paper}>
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item>
@@ -43,6 +45,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </Paper>
+      
     </div>
   );
 }
