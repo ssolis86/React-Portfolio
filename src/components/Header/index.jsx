@@ -108,7 +108,7 @@ return (
         <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Stephen Solis
+            
           </Typography>
     </Toolbar>
   </AppBar>

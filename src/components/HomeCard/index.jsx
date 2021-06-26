@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import me from '../../assets/me.jpg';
+import classNames from 'classnames';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,13 +22,18 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     height: '100px',
     width: '100px',
+  },
+  linear: {
+    background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'white',
   }
 }));
 
-const message =  `I am a full stack developer based in San Antonio, TX. 
-                  I love programming, traveling, golfing and playing guitar. 
-                  I am currently completing a Full Stack Developer Bootcamp through University of Texas at Austin. 
-                  Check out my Portfolio to see some of the work I've done!`;
+const message =  `THANKS FOR STOPPING BY! \n
+                  `;
 
 export default function HomeCard() {
   const classes = useStyles();
@@ -35,7 +41,7 @@ export default function HomeCard() {
   return (
     <div className={classes.root}>
     
-      <Paper className={classes.paper}>
+      <Paper className={classNames(classes.paper, classes.linear)}>
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item>
             <Avatar className={classes.avatar} alt="picture of me" src={me} />

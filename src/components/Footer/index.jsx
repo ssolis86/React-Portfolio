@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     footer: {
         flexShrink: 0,
         textAlign: 'center',
-        backgroundColor: 'tomato',
         color: 'white',
       }
   }));
