@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-
+import image from "./assets/background_image.jpg"
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -16,8 +16,11 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100vh',
   },
   bg:{
-    background: "linear-gradinet(45deg, 3FE6B8B 30%, #FF8E53 90%)",
-    backgroundSize: ""
+    backgroundImage: `url(${image})`,
+    height: '100vh',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover'
   }
 }));
 function App() {
