@@ -1,7 +1,7 @@
 # React Portfolio
 
 ## Github Repository Link
-![Github]()
+![Github](https://github.com/ssolis86/React-Portfolio)
 
 ## Description
 
