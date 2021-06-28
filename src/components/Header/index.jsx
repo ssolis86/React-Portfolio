@@ -103,7 +103,7 @@ return (
           [classes.appBarShift]: open,
         })}>
     <Toolbar>
-      <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleDrawerOpen} edge="start"
+      <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleDrawerOpen}
             className={clsx(classes.menuButton, open && classes.hide)}>
         <MenuIcon />
           </IconButton>

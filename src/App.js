@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import image from "./assets/background_image.jpg"
+import image from "./assets/office.jpg"
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -16,7 +16,12 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100vh',
   },
   bg:{
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    backgroundImage: `url(${image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  },
+  ft:{
+    background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
     border: 0,
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
