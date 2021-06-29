@@ -28,14 +28,14 @@ const useStyles = makeStyles({
     color: '#ddd',
   },
   btn: {
-    background: 'linear-gradient(45deg, #5AFF3D 30%, #FFF 90%)',
+    background: 'linear-gradient(45deg, #5AFF3D 30%, #3EB22A 90%)',
     border: 0,
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     fontFamily: 'Nunito',
     fontWeight: 'bold',
     fontSize: '1rem',
-    color: '#000',
+    color: 'rgba(0,0,0,0.5)',
     height: 48,
     padding: '0 30px',
   }
