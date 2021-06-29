@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import HomeCard from './components/HomeCard';
+import ProjectsToVisit from './components/ProjectsToVisit';
 import Contact from './components/Contact';
 import {  BrowserRouter as Router,  Switch,  Route} from "react-router-dom";
 import Portfolio from './components/Portfolio';
@@ -53,7 +54,7 @@ function App() {
             <Route path="/">
             <div className={classNames(classes.root, classes.bg)}>
               <Header />
-              <HomeCard />
+              <ProjectsToVisit />
               <Footer />
             </div>
             </Route>

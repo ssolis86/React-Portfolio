@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 3),
   },
   paper: {
-    maxWidth: 400,
+    maxWidth: 600,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
   },
@@ -27,12 +27,13 @@ const useStyles = makeStyles((theme) => ({
     background: 'linear-gradient(45deg, #B2B2B2 30%, #FFFFFF 90%)',
     border: 0,
     borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
+    boxShadow: '0 3px 5px 2px rgb(177, 177, 177)',
+    color: 'black',
   }
 }));
 
 const message =  `THANKS FOR STOPPING BY! \n
+                  Check out my Portfolio to see some of my work!
                   `;
 
 export default function HomeCard() {
@@ -43,11 +44,11 @@ export default function HomeCard() {
     
       <Paper className={classNames(classes.paper, classes.linear)}>
         <Grid container wrap="nowrap" spacing={2}>
-          <Grid item>
+          {/* <Grid item>
             <Avatar className={classes.avatar} alt="picture of me" src={me} />
-          </Grid>
+          </Grid> */}
           <Grid item xs>
-            <Typography>{message}</Typography>
+            <Typography variant="h3">{message}</Typography>
           </Grid>
         </Grid>
       </Paper>
