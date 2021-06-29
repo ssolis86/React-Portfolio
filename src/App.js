@@ -4,7 +4,7 @@ import ProjectsToVisit from './components/ProjectsToVisit';
 import Footer from './components/Footer';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import image from "./assets/green_wallpaper.jpg"
+import image from "./assets/purple_wallpaper.jpg"
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -16,7 +16,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${image})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    minHeight: '100vh'
+    minHeight: '100vh',
+    backgroundPosition: 'center'
+
   },
 }));
 function App() {

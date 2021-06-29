@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     maxWidth: 645,
     background: 'rgba(0,0,0,0.5)',
     margin: '20px',
+    textAlign: 'center',
   },
   media: {
     height: 440,
@@ -26,6 +27,7 @@ const useStyles = makeStyles({
     fontFamily: 'Nunito',
     fontSize: '1.1rem',
     color: '#ddd',
+    padding: 3
   },
   btn: {
     background: 'linear-gradient(45deg, #5AFF3D 30%, #3EB22A 90%)',
@@ -37,7 +39,8 @@ const useStyles = makeStyles({
     fontSize: '1rem',
     color: 'rgba(0,0,0,0.5)',
     height: 48,
-    padding: '0 30px',
+    padding: '1 30px',
+    textAlign: 'center'
   }
 });
 
@@ -50,7 +53,6 @@ export default function ProjectCard({ place, checked }) {
         <CardMedia
           className={classes.media}
           image={place.imageUrl}
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography
