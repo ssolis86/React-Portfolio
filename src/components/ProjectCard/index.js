@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   media: {
-    height: 440,
+    height: 140,
   },
   title: {
     fontFamily: 'Nunito',

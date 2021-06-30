@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import ProjectsToVisit from './components/ProjectsToVisit';
 import Footer from './components/Footer';
+import { CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import image from "./assets/purple_wallpaper.jpg"
@@ -25,6 +26,7 @@ function App() {
   const classes = useStyles();
   return (
    <div className={classNames(classes.root, classes.bg)}>
+      <CssBaseline />
       <Header />
       <ProjectsToVisit />
       <Footer />
