@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import ProjectsToVisit from './components/ProjectsToVisit';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -29,6 +30,7 @@ function App() {
       <CssBaseline />
       <Header />
       <ProjectsToVisit />
+      <Contact />
       <Footer />
     </div>
   );
