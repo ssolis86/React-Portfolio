@@ -23,12 +23,12 @@ export default function Project(props) {
             <h3>{props.title}</h3>
           </div>
           <div>
-            <a href={props.deployed}>
+            <a href={props.deployed} target="_blank">
               Project Link
             </a>
           </div>
           <div>
-            <a href={props.ghub}>
+            <a href={props.ghub} target="_blank">
               GitHub Repository
             </a>
           </div>

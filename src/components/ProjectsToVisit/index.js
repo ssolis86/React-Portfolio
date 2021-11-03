@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ProjectCard from '../ProjectCard';
 import project from '../../static/projects';
 import useWindowPosition from '../../hook/useWindowPosition';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
