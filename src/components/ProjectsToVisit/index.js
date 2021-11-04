@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import ProjectCard from '../ProjectCard';
 import project from '../../static/projects';
 import useWindowPosition from '../../hook/useWindowPosition';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link as Scroll } from 'react-scroll';
+import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,12 +23,27 @@ export default function ProjectsToVisit () {
   const checked = useWindowPosition('header');
   return (
     <div className={classes.root} id="project-to-visit">
+
       <ProjectCard place={project[0]} checked={checked} />
       <ProjectCard place={project[1]} checked={checked} />
       <ProjectCard place={project[2]} checked={checked} />
       <ProjectCard place={project[3]} checked={checked} />
       <ProjectCard place={project[4]} checked={checked} />
       <ProjectCard place={project[5]} checked={checked} />
+
+      <Collapse
+        in={checked}
+        {...(checked ? { timeout: 1000 } : {})}
+        collapsedHeight={50}
+      >
+        <div className={classes.container}>
+          <Scroll to="contact-form" smooth={true}>
+            <IconButton>
+              <ExpandMoreIcon className={classes.goDown} />
+            </IconButton>
+          </Scroll>
+        </div>
+      </Collapse>
     </div>
   );
 }
