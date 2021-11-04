@@ -12,7 +12,11 @@ import projectSix from '../../assets/roadtrippers.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    fontFamily: 'Nunito',
   },
   paper: {
     padding: theme.spacing(2),
