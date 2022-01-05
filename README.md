@@ -15,14 +15,3 @@ This is my personal portfolio created with ReactJS!
 ## Contributors
 
 - Stephen
-
-## Screenshots of Pages
-
-#### Home Page
-![Home Page](src/assets/Homepage.png)
-
-#### Portfolio Page
-![Portfolio Page](src/assets/Portfolio.png)
-
-### Contact Page
-![Contact Page](src/assets/Contact.png)
