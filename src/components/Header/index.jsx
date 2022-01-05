@@ -4,6 +4,7 @@ import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
+import name from '../../assets/name_new.gif';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,7 +54,8 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            Stephen<span className={classes.colorText}>Solis.</span>
+            {/* Stephen<span className={classes.colorText}>Solis.</span> */}
+            <img src={name} alt="loading..." width="400" height="200"/>
           </h1>
           {/* <IconButton>
             <SortIcon className={classes.icon} />
