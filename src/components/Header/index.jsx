@@ -54,8 +54,8 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            {/* Stephen<span className={classes.colorText}>Solis.</span> */}
-            <img src={name} alt="loading..." width="400" height="200"/>
+            Stephen<span className={classes.colorText}>Solis.</span>
+            {/* <img src={name} alt="loading..." width="400" height="200"/> */}
           </h1>
           {/* <IconButton>
             <SortIcon className={classes.icon} />
