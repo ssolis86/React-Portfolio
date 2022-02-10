@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar, Collapse, Button } from '@material-ui/core';
 import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
@@ -57,6 +57,14 @@ export default function Header() {
             Stephen<span className={classes.colorText}>Solis.</span>
             {/* <img src={name} alt="loading..." width="400" height="200"/> */}
           </h1>
+          <Scroll to='project-to-visit' smooth={true}>
+            <Button color='inherit' className={classes.colorText}>Projects</Button>
+          </Scroll>
+          
+          <Scroll to='contact-form' smooth={true}>
+            <Button color='inherit' className={classes.colorText}>Contact</Button>
+          </Scroll>
+
           {/* <IconButton>
             <SortIcon className={classes.icon} />
           </IconButton> */}
