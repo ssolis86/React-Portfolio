@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import { CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import image from "./assets/purple_wallpaper.jpg"
+import image from "./assets/purrple.jpg"
 
 const useStyles = makeStyles((theme) => ({
   root:{
