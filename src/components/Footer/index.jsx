@@ -15,7 +15,7 @@ import {
 
 const Footer = () => <>
         
-        <AppBar position="static" elevation={0} component="footer" color="default">
+        <AppBar position="static" elevation={0} component="footer" color="default" id='socialFooter'>
             <Toolbar style={{ justifyContent: "center" }}>
                 <Typography variant="caption">©2020</Typography>
                 <IconButton onClick={() => window.open('https://github.com/ssolis86?tab=repositories')}>

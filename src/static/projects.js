@@ -4,13 +4,14 @@ import weather from '../assets/weather.png';
 import workday from '../assets/workday.png';
 import vaccine from '../assets/vaccine.png';
 import roadtrip from '../assets/roadtrippers.png';
+import sushihana from '../assets/Sushihana_Red_Logo_png.png';
                                                                                                                                                                                                                                                                                
 const projects = [
     {
-        title: 'Fitness Tracker',
-        deployed: 'https://still-fjord-86390.herokuapp.com/',
-        ghub: 'https://github.com/ssolis86/Fitness-Tracker',
-        imageUrl: fitness,
+        title: 'Sushihana Japanese Restaurant',
+        deployed: 'https://www.sushihanasan.com/',
+        ghub: 'N/A',
+        imageUrl: sushihana,
         time: 1500,
     },
     {

@@ -6,6 +6,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 import name from '../../assets/name_new.gif';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appbar: {
     background: 'none',
+    
   },
   appbarWrapper: {
     width: '80%',
@@ -65,6 +67,9 @@ export default function Header() {
             <Button color='inherit' className={classes.colorText}>Contact</Button>
           </Scroll>
 
+          <Scroll to='socialFooter' smooth={true}>
+            <Button color='inherit' className={classes.colorText}>Social + Resume</Button>
+          </Scroll>
           {/* <IconButton>
             <SortIcon className={classes.icon} />
           </IconButton> */}
