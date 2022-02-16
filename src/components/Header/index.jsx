@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   colorText: {
     color: '#5AFF3D',
+    fontFamily: 'Nunito',
   },
   container: {
     textAlign: 'center',
@@ -60,7 +61,7 @@ export default function Header() {
             {/* <img src={name} alt="loading..." width="400" height="200"/> */}
           </h1>
           <Scroll to='project-to-visit' smooth={true}>
-            <Button color='inherit' className={classes.colorText}>Projects</Button>
+            <Button color='inherit' className={classes.colorText}>Clients + Projects</Button>
           </Scroll>
           
           <Scroll to='contact-form' smooth={true}>
