@@ -24,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
     margin: '0 auto',
   },
   appbarTitle: {
+    //appbar and landing text
+    color: '#FFD700',
     flexGrow: '1',
   },
   icon: {
@@ -31,18 +33,18 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#5AFF3D',
+    color: '#FFD700',
     fontFamily: 'Nunito',
   },
   container: {
     textAlign: 'center',
   },
   title: {
-    color: '#fff',
+    color: '#FFD700',
     fontSize: '4.5rem',
   },
   goDown: {
-    color: '#5AFF3D',
+    color: '#FFD700',
     fontSize: '4rem',
   },
 }));
@@ -57,7 +59,7 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            Stephen<span className={classes.colorText}>Solis.</span>
+            Stephen<span className={classes.colorText}>Solis</span>
             {/* <img src={name} alt="loading..." width="400" height="200"/> */}
           </h1>
           <Scroll to='project-to-visit' smooth={true}>
@@ -84,8 +86,8 @@ export default function Header() {
       >
         <div className={classes.container}>
           <h1 className={classes.title}>
-            Welcome to <br />
-            My<span className={classes.colorText}>Portfolio.</span>
+            S | S <br />
+            Web<span className={classes.colorText}>Developer</span>
           </h1>
           <Scroll to="project-to-visit" smooth={true}>
             <IconButton>

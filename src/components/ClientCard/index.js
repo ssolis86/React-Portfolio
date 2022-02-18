@@ -46,7 +46,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function ProjectCard({ place, checked }) {
+export default function ClientCard({ place, checked }) {
   const classes = useStyles();
 
   return (

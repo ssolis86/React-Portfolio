@@ -7,6 +7,7 @@ import { CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import image from "./assets/purrple.jpg"
+import Clients from './components/Clients';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -15,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100vh',
   },
   bg:{
-    backgroundImage: `url(${image})`,
+    // backgroundImage: `url(${image})`,
+    backgroundColor: '#0B5345',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     minHeight: '100vh',
@@ -29,6 +31,7 @@ function App() {
    <div className={classNames(classes.root, classes.bg)}>
       <CssBaseline />
       <Header />
+      <Clients />
       <ProjectsToVisit />
       <Contact />
       <Footer />
