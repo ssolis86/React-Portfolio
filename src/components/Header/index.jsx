@@ -57,7 +57,6 @@ export default function Header() {
   return (
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
-
         <Toolbar className={classes.appbarWrapper}>
           <Scroll className={classes.appbarTitle} to='header' smooth={true}>
             <Button>
@@ -94,10 +93,11 @@ export default function Header() {
       >
         <div className={classes.container}>
           <h1 className={classes.title}>
-            S | S <br />
+            Stephen Solis 
+            <br />
             Web<span className={classes.colorText}>Developer</span>
           </h1>
-          <Scroll to="project-to-visit" smooth={true}>
+          <Scroll to="clientCard" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />
             </IconButton>
