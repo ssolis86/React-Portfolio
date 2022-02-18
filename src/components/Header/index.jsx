@@ -57,13 +57,21 @@ export default function Header() {
   return (
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
+
         <Toolbar className={classes.appbarWrapper}>
-          <h1 className={classes.appbarTitle}>
-            Stephen<span className={classes.colorText}>Solis</span>
-            {/* <img src={name} alt="loading..." width="400" height="200"/> */}
-          </h1>
+          <Scroll className={classes.appbarTitle} to='header' smooth={true}>
+            <Button>
+              <h1 className={classes.appbarTitle}>Stephen<span className={classes.colorText}>Solis</span>
+                {/* <img src={name} alt="loading..." width="400" height="200"/> */}
+              </h1>
+            </Button>
+          </Scroll>
+          <Scroll to='clientCard' smooth={true}>
+            <Button color='inherit' className={classes.colorText}>Clients</Button>
+          </Scroll>
+
           <Scroll to='project-to-visit' smooth={true}>
-            <Button color='inherit' className={classes.colorText}>Clients + Projects</Button>
+            <Button color='inherit' className={classes.colorText}>Projects</Button>
           </Scroll>
           
           <Scroll to='contact-form' smooth={true}>
