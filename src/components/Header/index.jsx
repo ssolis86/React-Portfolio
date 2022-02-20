@@ -5,6 +5,7 @@ import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 import name from '../../assets/name_new.gif';
+import CottageSharpIcon from '@mui/icons-material/CottageSharp';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -63,9 +64,8 @@ export default function Header() {
         <Toolbar className={classes.appbarWrapper}>
           <Scroll className={classes.appbarTitle} to='header' smooth={true}>
             <Button>
-              <h1 className={classes.appbarTitle}>Stephen<span className={classes.colorText}>Solis</span>
-                {/* <img src={name} alt="loading..." width="400" height="200"/> */}
-              </h1>
+              <CottageSharpIcon></CottageSharpIcon>
+              {/* <h1 className={classes.appbarTitle}>Stephen<span className={classes.colorText}>Solis</span></h1> */}
             </Button>
           </Scroll>
           <Scroll to='clientCard' smooth={true}>
