@@ -6,6 +6,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 import name from '../../assets/name_new.gif';
 import CottageSharpIcon from '@mui/icons-material/CottageSharp';
+import { yellow } from '@mui/material/colors';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -64,7 +65,7 @@ export default function Header() {
         <Toolbar className={classes.appbarWrapper}>
           <Scroll className={classes.appbarTitle} to='header' smooth={true}>
             <Button>
-              <CottageSharpIcon></CottageSharpIcon>
+              <CottageSharpIcon sx={{ color: yellow[500] }}></CottageSharpIcon>
               {/* <h1 className={classes.appbarTitle}>Stephen<span className={classes.colorText}>Solis</span></h1> */}
             </Button>
           </Scroll>
