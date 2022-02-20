@@ -13,18 +13,21 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    fontFamily: 'Nunito',
+    fontFamily: 'Cormorant Garamond',
   },
   appbar: {
     background: 'none',
+    fontFamily: 'Cormorant Garamond',
     
   },
   appbarWrapper: {
     width: '80%',
     margin: '0 auto',
+    background: '#0B5345',
   },
   appbarTitle: {
     //appbar and landing text
+    fontFamily: 'Cormorant Garamond',
     color: '#FFD700',
     flexGrow: '1',
   },
@@ -34,14 +37,14 @@ const useStyles = makeStyles((theme) => ({
   },
   colorText: {
     color: '#FFD700',
-    fontFamily: 'Nunito',
+    fontFamily: 'Cormorant Garamond',
   },
   container: {
     textAlign: 'center',
   },
   title: {
     color: '#FFD700',
-    fontSize: '4.5rem',
+    fontSize: '10.0rem',
   },
   goDown: {
     color: '#FFD700',
@@ -56,7 +59,7 @@ export default function Header() {
   }, []);
   return (
     <div className={classes.root} id="header">
-      <AppBar className={classes.appbar} elevation={0}>
+      <AppBar className={classes.appbar} elevation={0} position='fixed'>
         <Toolbar className={classes.appbarWrapper}>
           <Scroll className={classes.appbarTitle} to='header' smooth={true}>
             <Button>
@@ -95,7 +98,7 @@ export default function Header() {
           <h1 className={classes.title}>
             Stephen Solis 
             <br />
-            Web<span className={classes.colorText}>Developer</span>
+            <span className={classes.colorText}>Web Developer</span>
           </h1>
           <Scroll to="clientCard" smooth={true}>
             <IconButton>

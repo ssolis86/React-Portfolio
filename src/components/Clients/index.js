@@ -23,6 +23,7 @@ export default function Clients () {
   const checked = useWindowPosition('header');
   return (
     <div className={classes.root} id="clientCard">
+      
 
       <ClientCard place={clients[0]} checked={checked} />
 

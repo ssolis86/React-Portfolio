@@ -24,8 +24,8 @@ export default function ProjectsToVisit () {
   return (
     <div className={classes.root} id="project-to-visit">
 
-      <ProjectCard place={project[0]} checked={checked} />
-      {/* <ProjectCard place={project[1]} checked={checked} /> */}
+      {/* <ProjectCard place={project[0]} checked={checked} /> */}
+      <ProjectCard place={project[1]} checked={checked} />
       <ProjectCard place={project[2]} checked={checked} />
       <ProjectCard place={project[3]} checked={checked} />
       <ProjectCard place={project[4]} checked={checked} />
