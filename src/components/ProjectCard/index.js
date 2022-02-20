@@ -19,13 +19,13 @@ const useStyles = makeStyles({
 
   },
   title: {
-    fontFamily: 'Nunito',
+    fontFamily: 'Cormorant Garamond',
     fontWeight: 'bold',
     fontSize: '2rem',
     color: '#fff',
   },
   desc: {
-    fontFamily: 'Nunito',
+    fontFamily: 'Cormorant Garamond',
     fontSize: '1.1rem',
     color: '#ddd',
     padding: 3
@@ -36,7 +36,7 @@ const useStyles = makeStyles({
     border: 1,
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    fontFamily: 'Nunito',
+    fontFamily: 'Cormorant Garamond',
     fontWeight: 'bold',
     fontSize: '1rem',
     color: 'rgba(0,0,0,0.5)',
