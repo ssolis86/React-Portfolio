@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     padding: theme.spacing(2, 3),
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    width: '50ch',
+    width: '40ch',
     textAlign: 'center',
     borderRadius: 3,
   }
@@ -21,7 +21,7 @@ export default function ContactForm()
 {
     const classes = useStyles();
     return (
-        <div width="25%" className={classes.root}>
+        <div className={classes.root}>
             <form>
             <TextField variant="outlined" label="Full Name" fullWidth autocomplete="none"/>
             <TextField variant="outlined" label="Email" fullWidth autocomplete="none"/>

@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     height: '100vh',
     fontFamily: 'Nunito',
+    maxWidth: '300'
   },
   paper: {
     maxWidth: 400,

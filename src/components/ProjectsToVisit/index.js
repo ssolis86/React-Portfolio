@@ -24,7 +24,6 @@ export default function ProjectsToVisit () {
   return (
     <div className={classes.root} id="project-to-visit">
 
-      {/* <ProjectCard place={project[0]} checked={checked} /> */}
       <ProjectCard place={project[1]} checked={checked} />
       <ProjectCard place={project[2]} checked={checked} />
       <ProjectCard place={project[3]} checked={checked} />
@@ -36,13 +35,6 @@ export default function ProjectsToVisit () {
         {...(checked ? { timeout: 1000 } : {})}
         collapsedHeight={50}
       >
-        <div className={classes.container}>
-          <Scroll to="contact-form" smooth={true}>
-            <IconButton>
-              <ExpandMoreIcon className={classes.goDown} />
-            </IconButton>
-          </Scroll>
-        </div>
       </Collapse>
     </div>
   );

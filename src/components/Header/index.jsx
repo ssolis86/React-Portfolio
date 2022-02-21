@@ -41,6 +41,11 @@ const useStyles = makeStyles((theme) => ({
     color: '#FFD700',
     fontFamily: 'Cormorant Garamond',
   },
+  navBarText: {
+    color: '#FFD700',
+    fontFamily: 'Cormorant Garamond',
+    fontSize: '1.5rem',
+  },
   container: {
     textAlign: 'center',
   },
@@ -70,19 +75,19 @@ export default function Header() {
             </Button>
           </Scroll>
           <Scroll to='clientCard' smooth={true}>
-            <Button color='inherit' className={classes.colorText}>Clients</Button>
+            <Button color='inherit' className={classes.navBarText}>Clients</Button>
           </Scroll>
 
           <Scroll to='project-to-visit' smooth={true}>
-            <Button color='inherit' className={classes.colorText}>Projects</Button>
+            <Button color='inherit' className={classes.navBarText}>Projects</Button>
           </Scroll>
           
           <Scroll to='contact-form' smooth={true}>
-            <Button color='inherit' className={classes.colorText}>Contact</Button>
+            <Button color='inherit' className={classes.navBarText}>Contact</Button>
           </Scroll>
 
           <Scroll to='socialFooter' smooth={true}>
-            <Button color='inherit' className={classes.colorText}>Social + Resume</Button>
+            <Button color='inherit' className={classes.navBarText}>Social + Resume</Button>
           </Scroll>
           {/* <IconButton>
             <SortIcon className={classes.icon} />
