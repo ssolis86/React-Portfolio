@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: '#000000',
-    fontSize: '9.0rem',
+    fontSize: '8rem',
   },
 
   goDown: {
