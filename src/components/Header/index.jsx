@@ -84,9 +84,9 @@ export default function Header() {
             <Button color='inherit' className={classes.navBarText}>Projects</Button>
           </Scroll>
           
-          <Scroll to='contact-form' smooth={true}>
+          {/* <Scroll to='contact-form' smooth={true}>
             <Button color='inherit' className={classes.navBarText}>Contact</Button>
-          </Scroll>
+          </Scroll> */}
 
           <Scroll to='socialFooter' smooth={true}>
             <Button color='inherit' className={classes.navBarText}>Social + Resume</Button>

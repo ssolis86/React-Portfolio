@@ -33,7 +33,7 @@ function App() {
       <Header />
       <Clients />
       <ProjectsToVisit />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
