@@ -25,12 +25,12 @@ const useStyles = makeStyles((theme) => ({
   appbarWrapper: {
     width: '80%',
     margin: '0 auto',
-    background: '#0B5345',
+    background: '#FFFDD0',
   },
   appbarTitle: {
     //appbar and landing text
     fontFamily: 'Cormorant Garamond',
-    color: '#FFD700',
+    color: '#000000',
     flexGrow: '1',
   },
   icon: {
@@ -38,11 +38,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#FFD700',
+    color: '#000000',
     fontFamily: 'Cormorant Garamond',
+    fontSize: '6rem'
   },
   navBarText: {
-    color: '#FFD700',
+    color: '#000000',
     fontFamily: 'Cormorant Garamond',
     fontSize: '1.5rem',
   },
@@ -50,11 +51,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   title: {
-    color: '#FFD700',
-    fontSize: '10.0rem',
+    color: '#000000',
+    fontSize: '9.0rem',
   },
+
   goDown: {
-    color: '#FFD700',
+    color: '#000000',
     fontSize: '4rem',
   },
 }));
@@ -70,7 +72,7 @@ export default function Header() {
         <Toolbar className={classes.appbarWrapper}>
           <Scroll className={classes.appbarTitle} to='header' smooth={true}>
             <Button>
-              <CottageSharpIcon sx={{ color: yellow[500] }}></CottageSharpIcon>
+              <CottageSharpIcon sx={{ color: 'black' }}></CottageSharpIcon>
               {/* <h1 className={classes.appbarTitle}>Stephen<span className={classes.colorText}>Solis</span></h1> */}
             </Button>
           </Scroll>
@@ -104,7 +106,7 @@ export default function Header() {
           <h1 className={classes.title}>
             Stephen Solis 
             <br />
-            <span className={classes.colorText}>Web Developer</span>
+            <span className={classes.colorText}>Full Stack <br/> Software Engineer</span>
           </h1>
           <Scroll to="clientCard" smooth={true}>
             <IconButton>

@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     fontFamily: 'Cormorant Garamond',
     fontWeight: 'bold',
     fontSize: '2rem',
-    color: '#fff',
+    color: '#000000',
   },
   desc: {
     fontFamily: 'Cormorant Garamond',

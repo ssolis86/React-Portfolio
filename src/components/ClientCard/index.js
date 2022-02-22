@@ -22,12 +22,12 @@ const useStyles = makeStyles({
     fontFamily: 'Cormorant Garamond',
     fontWeight: 'bold',
     fontSize: '2rem',
-    color: '#fff',
+    color: '#000000',
   },
   desc: {
     fontFamily: 'Cormorant Garamond',
     fontSize: '1.1rem',
-    color: '#ddd',
+    color: '#000000',
     padding: 3
   },
   btn: {

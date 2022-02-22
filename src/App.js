@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   bg:{
     // backgroundImage: `url(${image})`,
-    backgroundColor: '#0B5345',
+    backgroundColor: '#FFFDD0',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     minHeight: '100vh',

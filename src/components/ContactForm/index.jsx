@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     overflow: 'hidden',
     padding: theme.spacing(2, 3),
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    width: '40ch',
+    background: 'linear-gradient(45deg, #FFFDD0 30%, #FFFDD0 90%)',
+    // width: '40ch',
+    maxWidth: 500,
     textAlign: 'center',
     borderRadius: 3,
   }
